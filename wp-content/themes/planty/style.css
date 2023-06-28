@@ -4,7 +4,7 @@ Theme URI: https://wordpress.org/themes/twentytwentyone/
 Author: Damien Decadet
 Author URI: https://damiendecadet.fr/
 Description: Theme enfant
-Template: twentytwentyone
+Template: Twenty Twenty-One
 */
 /* header */
 header{
@@ -26,6 +26,14 @@ header a{
 }
 li {
     list-style-type: none;
+}
+.logo{
+    width: 250px;
+    margin: 15px;
+}
+h1{
+    font-size: 38px;
+    justify-content: center;
 }
 /* footer */
 footer{
