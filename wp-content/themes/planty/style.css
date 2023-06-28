@@ -31,10 +31,6 @@ li {
     width: 250px;
     margin: 15px;
 }
-h1{
-    font-size: 38px;
-    justify-content: center;
-}
 /* footer */
 footer{
     display: flex;
@@ -48,12 +44,75 @@ footer a{
 .presentation{
     background-color: #ece2da;
 }
+.titre1{
+    font-size: 38px;
+    display: flex;
+    justify-content: center;
+    color: green;
+}
+.energie{
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+}
+.coté{
+    height: 300px;
+    width: 300px;
+    margin: 100px, 0px 0px 0px ;
+}
 .plante{
     background-color: white;
+    height: 400px;
+}
+.titre2{
+    color: green;
+    display: flex;
+    justify-content: center;
+}
+.info{
+    width: 500px;
+    height: 120px;
+    text-align: center;
+    display: flex;
+    align-content: center;
+    margin-left: 550px;
+    margin-top: 30px;
+    font-size: 20px;
+    font-family: syne;
 }
 .gout{
     background-color: #ece2da;
 }
-.parfum{
+.titre3{
+    color: red;
+    display: flex;
+    justify-content: center;
+}
+.ligne{
+    display: flex;
+    justify-content: center;
+}
+.avis{
+    background-color: white;
+}
+.ce{
+    display: flex;
+    flex: 1 1 auto;
+}
+.card{
+    display: flex;
+    flex: 1;
+    width: 460px;
+    height: 310px;
+}
+.card1{
+    margin: 20px;
+}
+.titre4{
+    color: green;
+    display: flex;
+    justify-content: center;
+}
+.frise{
     background-color: white;
 }
