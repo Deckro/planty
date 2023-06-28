@@ -9,7 +9,7 @@
 <header <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 <div class="top">
-    <a href="#index.php"><img src="<?php echo get_stylesheet_directory_uri()."/img/Logo source.png";?>" alt="gauche"> </a>
+    <a class="logo" href="index.php"><img src="<?php echo get_stylesheet_directory_uri()."/img/Logo.png";?>" alt="gauche"></a>
     <div>
 	    <nav class="nav">
             <ul>
