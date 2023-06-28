@@ -27,10 +27,14 @@
 				<h3>sylvie</h3>
 				<p>Mixologue</p>
 			</div>
+            <img src="<?php echo get_stylesheet_directory_uri()."/img/Group 3.png";?>" alt="droit">
 		</div>
     </article>
     <article>
         <h2>Nous contacter</h2>
+        <h4>Nom</h4><input type="text">
+        <h4>E-mail</h4><input type="email">
+        <h4>Message</h4><textarea aria-errormessage=""></textarea>
     </article>
     <img src="<?php echo get_stylesheet_directory_uri()."/img/Mask group(1).png";?>" alt="bas">
 </main>
