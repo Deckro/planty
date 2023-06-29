@@ -9,6 +9,18 @@ Template: Twenty Twenty-One
 /* commun */
 @media screen and (min-width: 1200px)
 {
+.taille{
+    width: 100%;
+    text-align: center;
+}
+body{
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+main{
+    text-align: center;
+}
 
 /* header */
 header{
@@ -121,7 +133,61 @@ footer a{
     background-color: white;
 }
 /*nous rencontrer*/
-
+.nous{
+    background-color: #ece2da;
+    display: flex;
+    justify-content: center;
+}
+.textnous{
+    width: 690px;
+}
+.equipe{
+    background-color: white;
+    color: black;
+}
+.équipe{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+.fleur{
+    width: 190px;
+    height: 220px;
+}
+.formrencontre{
+    background-color: #ece2da;
+}
+.encolonne{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.rencontrer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+input[type="email"]{
+    width: 380px;
+    height: 70px;
+    margin: auto;
+}
+input[type="text"]{
+    width: 380px;
+    height: 70px;
+    margin: auto;
+}
+.message{
+    width: 380px;
+    height: 240px;
+    margin: auto;
+}
+.envoyer{
+    width: 200px;
+    height: 55px;
+    margin: auto;
+}
 /* commander */
 .back{
     background-color: #3b8e46;
@@ -158,8 +224,7 @@ footer a{
 }
 .colonne{
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column;  
 }
 
 }
