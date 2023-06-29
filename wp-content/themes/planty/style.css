@@ -108,6 +108,18 @@ footer a{
     display: flex;
     justify-content: center;
 }
+.fruit{
+    width: 390px;
+    height: 260px;
+}
+.fraise, .framboise, .pamplemousse, .citron{
+    position: absolute; 
+    color: white;
+    font-size: 48px;
+    font-weight: bold;
+    margin-top: 100px;
+    margin-left: 100px;
+}
 .avis{
     background-color: white;
 }
@@ -209,13 +221,21 @@ input[type="text"]{
     justify-content: center;
     gap: 20px;
 }
-.fraise, .framboise, .pamplemousse, .citron{
-    position: absolute;
-    align-items: center;
-    margin-top: 50px;
-    margin-left: 50px;
-    font-size: 38px;
+.fruit1{
+    height: 190px;
+    height: 130px;
+}
+.fraise1, .framboise1, .pamplemousse1, .citron1{
+    position: absolute; 
     color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-left: 60px;
+}
+.inputbutton{
+    display: flex;
+    gap: 10px;
 }
 .formulaire{
     display: flex;

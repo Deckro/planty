@@ -18,12 +18,12 @@
 		<h2 class="titre3">LES Goûts</h2>
 		<p>Nous avons une saveur pour chaque moment de votre journée.</p>
 		<div class="ligne">
-			<img src="<?php echo get_stylesheet_directory_uri()."/img/jeremy-bezanger-0QgbyZdhX7k-unsplash 1.png";?>" alt="fraise">
-			<img src="<?php echo get_stylesheet_directory_uri()."/img/estudio-bloom-tOitjphtIXU-unsplash 1.png";?>"  alt="pamplemousse">
+			<div class="fruit"><h3 class="fraise">FRAISE</h3><img src="<?php echo get_stylesheet_directory_uri()."/img/jeremy-bezanger-0QgbyZdhX7k-unsplash 1.png";?>" alt="fraise"></div>
+			<div class="fruit"><h3 class="pamplemousse">PAMPLE </br>MOUSSE</h3><img src="<?php echo get_stylesheet_directory_uri()."/img/estudio-bloom-tOitjphtIXU-unsplash 1.png";?>"  alt="pamplemousse"></div>
 		</div>
 		<div class="ligne">
-			<img src="<?php echo get_stylesheet_directory_uri()."/img/rodion-kutsaev-4k8xEFW4_3Q-unsplash 1.png";?>"  alt="framboise">
-			<img src="<?php echo get_stylesheet_directory_uri()."/img/estudio-bloom-ezqnxsqUZ80-unsplash 1.png";?>"  alt="citron">
+			<div class="fruit"><h3 class="framboise">FRAMBOISE</h3><img src="<?php echo get_stylesheet_directory_uri()."/img/rodion-kutsaev-4k8xEFW4_3Q-unsplash 1.png";?>"  alt="framboise"></div>
+			<div class="fruit"><h3 class="citron">CITRON</h3><img src="<?php echo get_stylesheet_directory_uri()."/img/estudio-bloom-ezqnxsqUZ80-unsplash 1.png";?>"  alt="citron"></div>
 		</div>
 	</article>
 	<article class="avis">

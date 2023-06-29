@@ -7,16 +7,16 @@
         <h2 class="votre">votre commande</h2>
         <div class="fruits">
             <div>
-                <h3 class="fraise">fraise</h3><img src="<?php echo get_stylesheet_directory_uri()."/img/jeremy-bezanger-0QgbyZdhX7k-unsplash 1.png";?>" alt="fraise">
+                <h3 class="fraise1">FRAISE</h3><img class="fruit1" src="<?php echo get_stylesheet_directory_uri()."/img/jeremy-bezanger-0QgbyZdhX7k-unsplash 1.png";?>" alt="fraise">
             </div>
             <div>
-		        <h3 class="pamplemousse">pamplemousse</h3><img src="<?php echo get_stylesheet_directory_uri()."/img/estudio-bloom-tOitjphtIXU-unsplash 1.png";?>"  alt="pamplemousse">
+		        <h3 class="pamplemousse1">PAMPLE </br>MOUSSE</h3><img class="fruit1" src="<?php echo get_stylesheet_directory_uri()."/img/estudio-bloom-tOitjphtIXU-unsplash 1.png";?>"  alt="pamplemousse">
             </div>
             <div>
-                <h3 class="framboise">framboise</h3><img src="<?php echo get_stylesheet_directory_uri()."/img/rodion-kutsaev-4k8xEFW4_3Q-unsplash 1.png";?>"  alt="framboise">
+                <h3 class="framboise1">FRAMB </br>OISE</h3><img class="fruit1" src="<?php echo get_stylesheet_directory_uri()."/img/rodion-kutsaev-4k8xEFW4_3Q-unsplash 1.png";?>"  alt="framboise">
             </div>
             <div>
-		        <h3 class="citron">citron</h3><img src="<?php echo get_stylesheet_directory_uri()."/img/estudio-bloom-ezqnxsqUZ80-unsplash 1.png";?>"  alt="citron">
+		        <h3 class="citron1">CITRON</h3><img class="fruit1" src="<?php echo get_stylesheet_directory_uri()."/img/estudio-bloom-ezqnxsqUZ80-unsplash 1.png";?>"  alt="citron">
             </div>
         </div>
         <div>
