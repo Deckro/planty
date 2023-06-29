@@ -6,6 +6,10 @@ Author URI: https://damiendecadet.fr/
 Description: Theme enfant
 Template: Twenty Twenty-One
 */
+/* commun */
+@media screen and (min-width: 1200px)
+{
+
 /* header */
 header{
     background-color: white;
@@ -115,4 +119,55 @@ footer a{
 }
 .frise{
     background-color: white;
+}
+/*nous rencontrer*/
+
+/* commander */
+.back{
+    background-color: #3b8e46;
+}
+.commandertitre{
+    text-align: center;   
+    padding: 0px;
+    margin: 0px;
+    color: white;
+}
+.selection{
+    text-align: center;
+}
+.votre{
+    color: white;
+}
+.fruits{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.fraise, .framboise, .pamplemousse, .citron{
+    position: absolute;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 50px;
+    font-size: 38px;
+    color: white;
+}
+.formulaire{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.colonne{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+}
+@media all and (min-width: 750px) and (max-width: 1199px)
+{
+
+}
+@media screen and (max-width: 750px)
+{
+
 }
