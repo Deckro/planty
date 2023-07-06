@@ -1,9 +1,12 @@
 /*
 Theme Name: planty
-Theme URI: https://wordpress.org/themes/twentytwentyone/
+Theme URI: https://wordpress.org/themes/cake-shop-bakery/
 Author: Damien Decadet
 Author URI: https://damiendecadet.fr/
 Description: Theme enfant
-Template: Twenty Twenty-One
+Template: cake-shop-bakery
 */
 /* commun */
+.elementor-element-408b722{
+    border-right: 1px solid white;
+}
