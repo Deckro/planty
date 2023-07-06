@@ -7,3 +7,6 @@ Description: Theme enfant
 Template: oceanwp
 */
 /* commun */
+*{
+    font-family: syne;
+}

@@ -293,18 +293,19 @@ function cake_shop_bakery_sanitize_checkbox( $input ) {
 	return ( ( isset( $input ) && true == $input ) ? true : false );
 }
 
+//slect
 function cake_shop_bakery_sanitize_select( $input, $setting ){
     $input = sanitize_key($input);
     $choices = $setting->manager->get_control( $setting->id )->choices;
     return ( array_key_exists( $input, $choices ) ? $input : $setting->default );
 }
 
-if (!function_exists('cake_shop_bakery_loop_columns')) {
-		function cake_shop_bakery_loop_columns() {
-		return 3;
-	}
+ //Float
+function cake_shop_bakery_sanitize_float( $input ) {
+    return filter_var($input, FILTER_SANITIZE_NUMBER_FLOAT, FILTER_FLAG_ALLOW_FRACTION);
 }
-add_filter('loop_shop_columns', 'cake_shop_bakery_loop_columns');
+
+
 
 /**
  * Get CSS
@@ -528,3 +529,20 @@ function cake_shop_bakery_info_page() {
 	</div>
 	<?php
 }
+
+//Change number of products that are displayed per page (shop page)
+add_filter( 'loop_shop_per_page', 'cake_shop_bakery_shop_per_page', 9 );
+function cake_shop_bakery_shop_per_page( $cols ) {
+  	$cols = get_theme_mod( 'cake_shop_bakery_product_per_page', 9 );
+	return $cols;
+}
+
+// Change number or products per row to 3
+add_filter('loop_shop_columns', 'cake_shop_bakery_loop_columns');
+if (!function_exists('cake_shop_bakery_loop_columns')) {
+	function cake_shop_bakery_loop_columns() {
+		$columns = get_theme_mod( 'cake_shop_bakery_products_per_row', 3 );
+		return $columns; // 3 products per row
+	}
+}
+

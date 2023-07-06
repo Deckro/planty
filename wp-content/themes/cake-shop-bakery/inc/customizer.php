@@ -182,6 +182,34 @@ function cake_shop_bakery_customize_register($wp_customize){
         'type'           => 'checkbox',
     )));
 
+    // Product Columns
+    $wp_customize->add_setting( 'cake_shop_bakery_products_per_row' , array(
+        'default'           => '3',
+        'transport'         => 'refresh',
+        'sanitize_callback' => 'cake_shop_bakery_sanitize_select',
+    ) );
+
+    $wp_customize->add_control('cake_shop_bakery_products_per_row', array(
+        'label' => __( 'Product per row', 'cake-shop-bakery' ),
+        'section'  => 'cake_shop_bakery_general_settings',
+        'type'     => 'select',
+        'choices'  => array(
+            '2' => '2',
+            '3' => '3',
+            '4' => '4',
+        ),
+    ) );
+
+    $wp_customize->add_setting('cake_shop_bakery_product_per_page',array(
+        'default'   => '9',
+        'sanitize_callback' => 'cake_shop_bakery_sanitize_float'
+    ));
+    $wp_customize->add_control('cake_shop_bakery_product_per_page',array(
+        'label' => __('Product per page','cake-shop-bakery'),
+        'section'   => 'cake_shop_bakery_general_settings',
+        'type'      => 'number'
+    ));
+
     // Pro Version
     $wp_customize->add_setting( 'pro_version_general_setting_pro_option', array(
         'sanitize_callback' => 'Cake_Shop_Bakery_sanitize_custom_control'

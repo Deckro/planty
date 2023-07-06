@@ -3,7 +3,7 @@ Contributors: TheMagnifico52
 Requires at least: 5.0
 Tested up to: 6.2
 Requires PHP: 5.6
-Stable tag: 1.8
+Stable tag: 1.9
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: wide-blocks, block-styles, custom-logo, one-column, two-columns, grid-layout, sticky-post, custom-background, custom-colors, custom-header, custom-menu, footer-widgets, featured-images, flexible-header, threaded-comments, theme-options, left-sidebar, right-sidebar, full-width-template, editor-style, food-and-drink, blog, e-commerce
@@ -156,3 +156,8 @@ Stocksnap Images,
 * Added footer widgets.
 * Added footer widgets tag.
 * Added footer css.
+
+= 1.9
+
+* Added product per page setting.
+* Added product per row setting.

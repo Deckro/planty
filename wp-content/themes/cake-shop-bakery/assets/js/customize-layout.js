@@ -24,7 +24,7 @@
 
 			// General Setting
 
-			if ( id === 'cake_shop_bakery_preloader_hide' || id === 'cake_shop_bakery_sticky_header' || id === 'cake_shop_bakery_scroll_hide' ) {
+			if ( id === 'cake_shop_bakery_preloader_hide' || id === 'cake_shop_bakery_sticky_header' || id === 'cake_shop_bakery_scroll_hide' || id === 'cake_shop_bakery_products_per_row' ) {
 				$( '#customize-control-'+ id ).before('<li class="tab-title customize-control">'+ title  +'</li>');
 			} else {
 				$( '#customize-control-cake_shop_bakery_options-'+ id ).before('<li class="tab-title customize-control">'+ title +'</li>');
@@ -76,6 +76,7 @@
 		cake_shop_bakery_customizer_label( 'cake_shop_bakery_preloader_hide', 'Preloader' );
 		cake_shop_bakery_customizer_label( 'cake_shop_bakery_sticky_header', 'Sticky Header' );
 		cake_shop_bakery_customizer_label( 'cake_shop_bakery_scroll_hide', 'Scroll To Top' );
+		cake_shop_bakery_customizer_label( 'cake_shop_bakery_products_per_row', 'Woocommerce Setting')
 
 		//Slider
 		cake_shop_bakery_customizer_label( 'cake_shop_bakery_slider_setting', 'Slider' );

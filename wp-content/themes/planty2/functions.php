@@ -11,4 +11,16 @@ function my_theme_enqueue_styles() {
         get_stylesheet_uri(),
         array( $parenthandle ), 
     );
-} 
+}
+add_filter( 'wp_nav_menu_items', 'nav_menu_add_search', 10, 2 );
+function nav_menu_add_search( $items, $args ) {
+    if ('main_menu' === $args->theme_location) {
+    $items .='<li><a href="/planty/rencontrer">Nous rencontrer</a></li>';
+    if ( current_user_can('administrator') ) {
+        $items .= '<li><a href="' . admin_url() . '">Admin</a></li>';
+    }
+    $items .='<li><a href="/planty/commander">Commander</a></li>';
+    }
+
+    return $items;
+}
