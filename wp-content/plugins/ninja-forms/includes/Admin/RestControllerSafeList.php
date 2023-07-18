@@ -11,6 +11,9 @@ class RestControllerSafeList
     const   ALLOWED_METHOD_CALLS = [
         'NF_AJAX_Controllers_Form' => [
             'delete'
+        ],
+        'NF_AJAX_REST_Forms' => [
+            'delete'
         ]
     ];
 

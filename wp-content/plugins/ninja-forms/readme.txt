@@ -4,7 +4,7 @@ Tags: forms, contact form, email form, form builder, custom form, pdf form, regi
 
 Requires at least: 6.0
 Tested up to: 6.2.2
-Stable tag: 3.6.27
+Stable tag: 3.6.28
 
 License: GPLv2 or later
 
@@ -304,13 +304,18 @@ This section describes how to install the plugin and get it working.
 5. Beautiful Forms Every Time!
 
 == Upgrade Notice ==
-= 3.6.27 (04 July 2023)
+= 3.6.28 (06 July 2023)
 
 *Bug fixes:*
-* Use static call for class name for PHP 7 support 
+* Correct issue that prevented form deletion
 
 
 == Changelog ==
+= 3.6.28 (06 July 2023)
+
+*Bug fixes:*
+* Correct issue that prevented form deletion
+
 = 3.6.27 (04 July 2023)
 
 *Bug fixes:*
