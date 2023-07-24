@@ -9,6 +9,12 @@ Template: oceanwp
 #site-logo{
     padding: 10px 50px 10px 25px !important;
 }
+#site-logo #site-logo-inner a:hover img:hover{
+    opacity: 1;
+}
+#footer-bottom #footer-bottom-menu a:hover{
+    color: black;
+}
 .commander{
     background-color: #dc9f96;
     color: white !important;
@@ -37,6 +43,7 @@ form input[type=number]::-webkit-inner-spin-button{
     height: 60px;
 }
 input[type=number]{
+    -moz-appearance: textfield;
     background: url('img/moins.png') !important;
 }
 input[type="text"], input[type="email"]{
