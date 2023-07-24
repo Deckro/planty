@@ -15,17 +15,6 @@ Template: oceanwp
 #footer-bottom #footer-bottom-menu a:hover{
     color: black;
 }
-.commander{
-    background-color: #dc9f96;
-    color: white !important;
-    padding: 10px 70px 10px 60px !important;
-}
-.admin{
-    padding: 10px 60px 10px 30px !important;
-}
-.nousrencontrer{
-    padding: 10px 30px 10px 50px !important;
-}
 /*nous rencontrer */
 #wpforms-36-field_3, #wpforms-36-field_4{
     height: 71px;
@@ -88,6 +77,18 @@ input[type="text"], input[type="email"]{
 }
 /* desktop */
 @media screen and (min-width: 960px){
+
+    .commander{
+        background-color: #dc9f96;
+        color: white !important;
+        padding: 10px 70px 10px 60px !important;
+    }
+    .admin{
+        padding: 10px 60px 10px 30px !important;
+    }
+    .nousrencontrer{
+        padding: 10px 30px 10px 60px !important;
+    }
 /* page d'accueil */
     .elementor-element-da734e0, .elementor-element-bf1acf0, .elementor-element-cdb0d7b, .elementor-element-96789d8{
         margin-top: -160px;
@@ -208,7 +209,20 @@ input[type="text"], input[type="email"]{
 }
   /* tablette */  
 @media all and (min-width: 768px) and (max-width: 959px){
-    /* page d'accueil */
+    .commander{
+        background-color: #dc9f96;
+        color: white !important;
+        padding: 10px 70px 10px 60px !important;
+    }
+    .admin{
+        padding: 10px 60px 10px 60px !important;
+    }
+    .nousrencontrer{
+        padding: 10px 30px 10px 60px !important;
+    }
+    .mobile-menu{
+        padding: 10px;
+    }
     /* nous rencontrer */
     .wpforms-submit-container{
         text-align: center;
@@ -282,6 +296,21 @@ input[type="text"], input[type="email"]{
 }
   /* smartphone */
 @media all and (min-width: 320px) and (max-width: 767px){
+    .commander{
+        background-color: #dc9f96;
+        color: white !important;
+        padding: 10px 30px 10px 30px !important;
+    }
+    .admin{
+        padding: 10px 30px 10px 30px !important;
+    }
+    .nousrencontrer{
+        padding: 10px 30px 10px 30px !important;
+    }
+
+    .mobile-menu{
+        padding: 10px;
+    }
     /* page d'accueil */
     h2{
         font-size: 24px !important;
@@ -305,7 +334,7 @@ input[type="text"], input[type="email"]{
     #nf-field-29-container, #nf-field-31-container, #nf-field-33-container, #nf-field-28-container, #nf-field-30-container, #nf-field-32-container{
         display: inline-block;
         width: 37%;
-        margin-bottom: 200px;
+        margin-bottom: 138px;
         margin-top: 0px;
         z-index: 2;
     }
@@ -315,8 +344,11 @@ input[type="text"], input[type="email"]{
         margin-top: 0px;
         z-index: 2;
     }
+    .wp-image-334, .wp-image-333, .wp-image-332, .wp-image-331{
+        width: 300px;
+    }
     .elementor-element-4e481a9{
-        margin-top: -980px;
+        margin-top: -785px;
     }
     .nf-form-content, .elementor-32 .elementor-element.elementor-element-5443f2b > .elementor-container{
         text-align: center;
