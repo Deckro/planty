@@ -26,6 +26,17 @@ Template: oceanwp
 .nousrencontrer{
     padding: 10px 30px 10px 50px !important;
 }
+/*nous rencontrer */
+#wpforms-36-field_3, #wpforms-36-field_4{
+    height: 71px;
+    border: none;
+}
+#wpforms-36-field_5{
+    height: 230px;
+    border-radius: 5px;
+    border: none;
+}
+/* commander */
 #nf-label-field-38, #nf-label-field-39, #nf-label-field-40, #nf-label-field-43, #nf-label-field-44, #nf-label-field-45{
     color: white;
     font-size: 20px;
