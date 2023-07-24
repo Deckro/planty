@@ -6,39 +6,48 @@ Author URI: https://damiendecadet.fr/
 Description: Theme enfant
 Template: oceanwp
 */
+#site-logo{
+    padding: 10px 50px 10px 25px !important;
+}
 .commander{
     background-color: #dc9f96;
     color: white !important;
+    padding: 10px 70px 10px 60px !important;
+}
+.admin{
+    padding: 10px 60px 10px 30px !important;
+}
+.nousrencontrer{
+    padding: 10px 30px 10px 50px !important;
 }
 #nf-label-field-38, #nf-label-field-39, #nf-label-field-40, #nf-label-field-43, #nf-label-field-44, #nf-label-field-45{
     color: white;
+    font-size: 20px;
+    font-family: syne;
 }
 form input[type=number]::-webkit-inner-spin-button{
     padding-left: 10px;
     padding-right: 10px;
     margin-right: -15px;
+    margin-left: 20px;
     background: #e0b9b4;
     opacity: 0;
+    font-size: 16px;
     width: 80px;
     height: 60px;
 }
 input[type=number]{
     background: url('img/moins.png') !important;
 }
-form input[type=number]::-moz-inner-spin-button{
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-right: -15px;
-    background: #e0b9b4;
-    width: 80px;
-    height: 60px;
+input[type="text"], input[type="email"]{
+    height: 70px;
 }
 .nousrencontrer:hover{
-    font-weight: bold;
+    font-size: 13px bold;
     color: black !important;
 }
 .admin:hover{
-    font-weight: bold;
+    font-size: 13px bold;
     color: black !important;
 }
 .commander:hover{
@@ -65,6 +74,9 @@ form input[type=number]::-moz-inner-spin-button{
     .elementor-element-da734e0, .elementor-element-bf1acf0, .elementor-element-cdb0d7b, .elementor-element-96789d8{
         margin-top: -160px;
         margin-left: 50px;
+    }
+    .elementor-element-6e1397d, .elementor-element-5afd66a ,.elementor-element-b6e4474{
+        margin-top: 15px;
     }
 /* nous rencontrer */
     .wpforms-submit-container{
@@ -96,11 +108,12 @@ form input[type=number]::-moz-inner-spin-button{
     }
     #nf-field-36-container{
         display: block;
+        padding-bottom: 45px;
     }
     #nf-field-37-container, #nf-field-42-container{
         display: inline-block;
         width: 49.5%;
-        font-size: 18px;
+        font-size: 30px;
         color: white;
         padding-right: 45px;
         margin: 0;
@@ -156,6 +169,7 @@ form input[type=number]::-moz-inner-spin-button{
     }
     #nf-field-46{
         margin-top: 25px;
+        margin-bottom: 50px;
         background-color: #e0b9b4;
         padding-left: 55px;
         padding-right: 55px;
@@ -233,6 +247,7 @@ form input[type=number]::-moz-inner-spin-button{
     }
     #nf-field-46{
         margin-top: 25px;
+        margin-bottom: 50px;
         background-color: #e0b9b4;
         padding-left: 55px;
         padding-right: 55px;
@@ -251,7 +266,7 @@ form input[type=number]::-moz-inner-spin-button{
 @media all and (min-width: 320px) and (max-width: 767px){
     /* page d'accueil */
     h2{
-        font-size: 35px !important;
+        font-size: 24px !important;
     }
     /* nous rencontrer */
     .wpforms-submit-container{
@@ -261,9 +276,6 @@ form input[type=number]::-moz-inner-spin-button{
         background-color: #e0b9b4;
         padding-left: 40px;
         padding-right: 40px;
-    }
-    .elementor-element-3001d5d, .elementor-element-869073c, .elementor-element-e287822, .elementor-element-1b6c50d{
-        display: none;
     }
     /* formulaire commande */
     input{
@@ -298,6 +310,7 @@ form input[type=number]::-moz-inner-spin-button{
     }
     #nf-field-46{
         margin-top: 25px;
+        margin-bottom: 50px;
         background-color: #e0b9b4;
         padding-left: 60px;
         padding-right: 60px;
