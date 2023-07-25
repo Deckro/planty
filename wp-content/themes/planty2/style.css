@@ -12,8 +12,14 @@ Template: oceanwp
 #site-logo #site-logo-inner a:hover img:hover{
     opacity: 1;
 }
+#footer-widgets{
+    background-color: #3B8E46;
+}
 #footer-bottom #footer-bottom-menu a:hover{
     color: black;
+}
+textarea{
+    resize: none !important;
 }
 /*nous rencontrer */
 #wpforms-36-field_3, #wpforms-36-field_4{
@@ -187,8 +193,8 @@ input[type="text"], input[type="email"]{
         margin-right: 19px;
     }
     #nf-field-46{
-        margin-top: 25px;
-        margin-bottom: 50px;
+        margin-top: 40px;
+        margin-bottom: 70px;
         background-color: #e0b9b4;
         padding-left: 55px;
         padding-right: 55px;
