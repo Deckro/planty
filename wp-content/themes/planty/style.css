@@ -21,6 +21,9 @@ Template: oceanwp
 textarea{
     resize: none !important;
 }
+.onlyforlogged{
+    display: none;
+}
 /*nous rencontrer */
 #wpforms-36-field_3, #wpforms-36-field_4{
     height: 71px;
@@ -37,15 +40,20 @@ textarea{
     font-size: 20px;
     font-family: syne;
 }
+form input[type=number]{
+    max-width: 79px;
+    padding: 0;
+    margin-left: 0;
+}
 form input[type=number]::-webkit-inner-spin-button{
-    padding-left: 10px;
+    padding-left: 0px;
     padding-right: 10px;
     margin-right: -15px;
     margin-left: 20px;
     background: #e0b9b4;
     opacity: 0;
     font-size: 16px;
-    width: 80px;
+    width: 20px;
     height: 60px;
 }
 input[type=number]{
@@ -55,16 +63,24 @@ input[type=number]{
 input[type="text"], input[type="email"]{
     height: 70px;
 }
-.nousrencontrer:hover{
-    font-size: 13px bold;
+#menu-item-539 a:hover{
+    font-size: 13px;
+    color: black !important;
+    font-weight: bold;
+}
+#menu-item-541 a:hover{
+    font-size: 13px;
+    font-weight: bold;
     color: black !important;
 }
-.admin:hover{
-    font-size: 13px bold;
-    color: black !important;
-}
-.commander:hover{
+#menu-item-540 a:hover{
     background-color: #c02e44;
+    color: white !important;
+}
+.menu-item-540 a{
+    background-color: #dc9f96;
+    color: white !important;
+    padding: 10px 70px 10px 60px !important;
 }
 .container{
     width: initial;
@@ -84,15 +100,10 @@ input[type="text"], input[type="email"]{
 /* desktop */
 @media screen and (min-width: 960px){
 
-    .commander{
-        background-color: #dc9f96;
-        color: white !important;
-        padding: 10px 70px 10px 60px !important;
-    }
-    .admin{
+    #menu-item-541{
         padding: 10px 60px 10px 30px !important;
     }
-    .nousrencontrer{
+    #menu-item-539{
         padding: 10px 30px 10px 60px !important;
     }
 /* page d'accueil */
@@ -171,11 +182,6 @@ input[type="text"], input[type="email"]{
     }
     #nf-field-28-container, #nf-field-30-container, #nf-field-32-container, #nf-field-34-container{
         margin-right: 10px;
-    }
-    form input[type=number]{
-        max-width: 79px;
-        padding: 0;
-        margin-left: 0;
     }
     #nf-field-29, #nf-field-31, #nf-field-33{
         padding-left: 36px;

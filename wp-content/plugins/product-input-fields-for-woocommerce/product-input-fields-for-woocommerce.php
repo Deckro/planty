@@ -1,15 +1,15 @@
-<?php
+<?php // phpcs:ignore
 /**
  * Plugin Name: Product Input Fields for WooCommerce
  * Plugin URI: https://www.tychesoftwares.com/store/premium-plugins/product-input-fields-for-woocommerce/
  * Description: Add custom frontend input fields to WooCommerce products.
- * Version: 1.4.0
+ * Version: 1.5.0
  * Author: Tyche Softwares
  * Author URI: https://www.tychesoftwares.com/
  * Text Domain: product-input-fields-for-woocommerce
  * Domain Path: /langs
  * Copyright: © 2021 Tyche Softwares
- * WC tested up to: 7.1
+ * WC tested up to: 7.9
  * License: GNU General Public License v3.0
  * License URI: http://www.gnu.org/licenses/gpl-3.0.html
  *
@@ -35,7 +35,7 @@ if (
 
 // Constants.
 if ( ! defined( 'ALG_WC_PIF_VERSION' ) ) {
-	define( 'ALG_WC_PIF_VERSION', '1.4.0' );
+	define( 'ALG_WC_PIF_VERSION', '1.5.0' );
 }
 if ( ! defined( 'ALG_WC_PIF_ID' ) ) {
 	define( 'ALG_WC_PIF_ID', 'alg_wc_pif' );
@@ -65,6 +65,14 @@ if ( ! class_exists( 'Alg_WC_PIF' ) ) :
 	 * @since   1.0.0
 	 */
 	final class Alg_WC_PIF {
+
+		/**
+		 * Variable
+		 *
+		 * @var string Version.
+		 * @access public
+		 */
+		public static $version = '1.5.0';
 
 		/**
 		 * Define an instance for the class.
@@ -99,6 +107,9 @@ if ( ! class_exists( 'Alg_WC_PIF' ) ) :
 		 * @access  public
 		 */
 		public function __construct() {
+
+			// Deactivation hook.
+			register_deactivation_hook( __FILE__, array( &$this, 'pif_deactivate' ) );
 
 			// Set up localisation.
 			load_plugin_textdomain( 'product-input-fields-for-woocommerce', false, dirname( plugin_basename( __FILE__ ) ) . '/langs/' );
@@ -138,6 +149,18 @@ if ( ! class_exists( 'Alg_WC_PIF' ) ) :
 		 * @since   1.0.0
 		 */
 		public function includes() {
+
+			require_once 'includes/component/plugin-tracking/class-tyche-plugin-tracking.php';
+			new Tyche_Plugin_Tracking(
+				array(
+					'plugin_name'       => 'Product Input Fields for WooCommerce',
+					'plugin_locale'     => 'product-input-fields-for-woocommerce',
+					'plugin_short_name' => 'pif_lite',
+					'version'           => ALG_WC_PIF_VERSION,
+					'blog_link'         => 'https://www.tychesoftwares.com/docs/docs/product-input-fields-for-woocommerce/product-input-fields-usage-tracking',
+				)
+			);
+
 			// Functions.
 			require_once 'includes/alg-wc-pif-functions.php';
 			// Settings.
@@ -168,6 +191,24 @@ if ( ! class_exists( 'Alg_WC_PIF' ) ) :
 			}
 			// Core.
 			require_once 'includes/class-alg-wc-pif-core.php';
+
+			if ( is_admin() ) {
+				require_once 'includes/class-alg-wc-pif-tracking.php';
+
+				$pif_plugin_url = plugins_url() . '/product-input-fields-for-woocommerce';
+
+				// plugin deactivation.
+				require_once 'includes/class-tyche-plugin-deactivation.php';
+				new Tyche_Plugin_Deactivation(
+					array(
+						'plugin_name'       => 'Product Input Fields for WooCommerce',
+						'plugin_base'       => 'product-input-fields-for-woocommerce/product-input-fields-for-woocommerce.php',
+						'script_file'       => $pif_plugin_url . '/includes/js/plugin-deactivation.js',
+						'plugin_short_name' => 'pif_lite',
+						'version'           => ALG_WC_PIF_VERSION,
+					)
+				);
+			}
 		}
 
 		/**
@@ -216,6 +257,17 @@ if ( ! class_exists( 'Alg_WC_PIF' ) ) :
 			}
 		}
 
+		/**
+		 * Actions to be performed when the plugin is deactivate.
+		 *
+		 * @since 1.3.3
+		 */
+		public function pif_deactivate() {
+			if ( false !== as_next_scheduled_action( 'ts_send_data_tracking_usage' ) ) {
+				as_unschedule_action( 'ts_send_data_tracking_usage' ); // Remove the scheduled action.
+			}
+			do_action( 'pif_deactivate' );
+		}
 	}
 
 endif;
