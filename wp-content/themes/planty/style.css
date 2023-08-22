@@ -380,6 +380,9 @@ input[type="text"], input[type="email"]{
     h2{
         font-size: 24px !important;
     }
+    element.style{
+        width: 100%;
+    }
     /* nous rencontrer */
     .wpforms-submit-container{
         text-align: center;
@@ -445,7 +448,7 @@ input[type="text"], input[type="email"]{
     }
     #nf-field-42-container{
         color: white;
-        font-size: 16px;
+        font-size: 18px;
         margin-top: 20px;
         border-top: 1px solid white;
     }
